@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+      }
+
+      .box1 {
+        /* background-color: red; */
+        /* border-radius: 50%; */
+        background-image: linear-gradient(to bottom right, black, red);
+      }
+
+      .box2 {
+        background-image: repeating-linear-gradient(
+          to right,
+          green 10%,
+          transparent 20%
+        );
+        /* background-image: linear-gradient(to right, red 50%, blue 50%); */
+      }
+
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(
+            transparent 60%,
+            rgba(0, 0, 0, 0.774) 90%
+          ),
+          url(https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .box4 {
+        height: 250px;
+        background-image: repeating-radial-gradient(
+          circle at 10% 70%,
+          red 10%,
+          blue 20%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+  </body>
+</html>

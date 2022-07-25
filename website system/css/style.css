@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(245, 0, 87);
+  --secondary-color: rgb(63, 61, 86);
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/* common class */
+
+.section {
+  width: 100%;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.btn {
+  padding: 1.6rem 3rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 1000px;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn span {
+  color: white;
+  border-radius: 50%;
+}
+
+.btn .btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* landing section */
+
+.landing-section-main {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  min-height: 40rem;
+}
+
+.landing-section-container {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-section-container {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+.landing-section-desp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.landing-section-desp h1 {
+  font-size: 5rem;
+}
+
+.landing-section-container .landing-section-img img {
+  width: 100%;
+}

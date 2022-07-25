@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: sans-serif;
+      }
+
+      section {
+        width: 100%;
+        margin: 100px 0;
+      }
+
+      .container {
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        gap: 20px;
+      }
+
+      .box {
+        background-color: #11111190;
+        padding: 50px 20px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: overlay;
+        color: white;
+        border-radius: 10px;
+        transition: 0.6s;
+      }
+      .box:hover {
+        background-size: 130% 130%;
+      }
+
+      .box h2 {
+        font-size: 36px;
+      }
+
+      .btn {
+        padding: 18px 20px;
+        margin-top: 20px;
+        /* background-color: rgb(245, 32, 41); */
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        transition: 0.6s;
+      }
+
+      .box1 {
+        background-image: url(img1.jpg);
+      }
+
+      .box2 {
+        background-image: url(img2.jpg);
+      }
+
+      .box:hover .btn {
+        background-color: rgb(245, 32, 41);
+        border-color: rgb(245, 32, 41);
+      }
+
+      .btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 10px black;
+      }
+
+      .btn:active {
+        transform: translateY(0);
+        box-shadow: none;
+      }
+
+      @media screen and (min-width: 992px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="box box1">
+          <h2>Global Logistic Service for business</h2>
+          <button class="btn">Explore Property</button>
+        </div>
+        <div class="box box2">
+          <h2>Global Logistic Service for business</h2>
+          <button class="btn">Explore Property</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

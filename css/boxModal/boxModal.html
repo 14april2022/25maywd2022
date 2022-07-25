@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+        padding => inner space
+        margin => outer space
+        border => border
+     -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        background-color: skyblue;
+        /* padding-left: 40px;
+        padding-top: 10px;
+        padding-right: 24px;
+        padding-bottom: 70px; */
+        /* ============================ */
+        /* padding: top right bottom left; */
+        /* padding: 10px 24px 70px 40px; */
+        /* ============================ */
+        /* for equal padding from all direction */
+        /* padding: 30px; */
+        /* topBottom and leftRight */
+        padding: 20px 10px;
+        display: inline-block;
+        margin: 10px 40px;
+        border: 2px solid black;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .box:last-child:not(.hide) {
+        border: none;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+    <div class="box hide">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et
+        perferendis exercitationem unde iste harum nam ipsa molestias, accusamus
+        porro delectus non obcaecati eligendi, minus, deleniti incidunt quidem
+        modi reprehenderit.
+      </p>
+    </div>
+  </body>
+</html>

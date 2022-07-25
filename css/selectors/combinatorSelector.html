@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+        1 -> decendant Selector ( )
+        2 -> direct child selector (>)
+        3 -> adjacent Sibling Selector (+)
+        4 -> General Sibling Selector (~)
+     -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid black;
+      }
+
+      div p {
+        color: red;
+      }
+
+      ul li {
+        color: blue;
+      }
+
+      ul li ul li {
+        color: green;
+      }
+
+      div ~ p {
+        color: orange;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Apple
+        <ul>
+          <li>iphone 11</li>
+          <li>iphone 11</li>
+          <li>iphone 11</li>
+          <li>iphone 11</li>
+        </ul>
+      </li>
+      <li>Mi</li>
+      <li>Samsung</li>
+    </ul>
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ullam
+        perspiciatis alias, quo officia aperiam accusamus rerum quibusdam, velit
+        sed, recusandae cupiditate. Rerum vitae a similique pariatur itaque
+        tempora temporibus.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat
+        temporibus eveniet molestias eum consectetur repudiandae cum vitae
+        similique, ipsum beatae perspiciatis id, ipsam unde sequi officia rerum
+        aperiam quidem.
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur
+      culpa molestias mollitia saepe veniam eum reiciendis et natus sunt.
+      Voluptates mollitia rem pariatur illo sunt cupiditate, deserunt
+      accusantium earum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur
+      culpa molestias mollitia saepe veniam eum reiciendis et natus sunt.
+      Voluptates mollitia rem pariatur illo sunt cupiditate, deserunt
+      accusantium earum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur
+      culpa molestias mollitia saepe veniam eum reiciendis et natus sunt.
+      Voluptates mollitia rem pariatur illo sunt cupiditate, deserunt
+      accusantium earum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur
+      culpa molestias mollitia saepe veniam eum reiciendis et natus sunt.
+      Voluptates mollitia rem pariatur illo sunt cupiditate, deserunt
+      accusantium earum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur
+      culpa molestias mollitia saepe veniam eum reiciendis et natus sunt.
+      Voluptates mollitia rem pariatur illo sunt cupiditate, deserunt
+      accusantium earum.
+    </p>
+  </body>
+</html>

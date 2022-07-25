@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+        1 -> before
+        2 -> after
+        3 -> first-line
+        4 -> first-letter
+        5 -> selection
+     -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "Hello ";
+        color: red;
+      }
+
+      h1::after {
+        content: " Have a nice day";
+        color: green;
+      }
+      /* p::first-line {
+        color: green;
+      } */
+
+      /* p::first-letter {
+        color: red;
+        font-size: 32px;
+      } */
+
+      p::selection {
+        background-color: black;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Good Morning,</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus,
+      laudantium quasi nemo, amet vero nobis eaque atque quod illo, consectetur
+      sapiente. Ex ratione alias accusamus, inventore et blanditiis qui?
+    </p>
+  </body>
+</html>

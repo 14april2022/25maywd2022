@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 340px;
+        height: 400px;
+        background-color: skyblue;
+        /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+        clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% 75%,
+          75% 75%,
+          75% 100%,
+          50% 75%,
+          0% 75%
+        );
+        clip-path: polygon(
+          50% 0%,
+          83% 12%,
+          100% 43%,
+          99% 79%,
+          0 42%,
+          32% 100%,
+          6% 78%,
+          0% 43%,
+          100% 43%
+        );
+      }
+
+      .main-box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 100px auto;
+      }
+
+      .child-box {
+        width: 100%;
+        height: 100%;
+        background-color: skyblue;
+        /* clip-path: circle(radius at x y); */
+        /* clip-path: circle(30px at 0% 0%); */
+        /* clip-path: ellipse(xr , yr at x y ); */
+        clip-path: ellipse(100px 40px at 50% 50%);
+        transition-duration: 1s;
+      }
+
+      .main-box:hover .child-box {
+        /* clip-path: circle(100px at 0% 0%); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <div class="main-box">
+      <div class="child-box"></div>
+    </div>
+  </body>
+</html>

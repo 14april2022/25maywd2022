@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 0 200px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0;
+        animation-name: move-right;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes move-right {
+        from {
+        }
+
+        to {
+          margin-left: 300px;
+        }
+      }
+
+      .box1 {
+        background-color: skyblue;
+        animation-timing-function: cubic-bezier(1, 0.49, 0.28, 1.5);
+      }
+
+      .box1:hover {
+        animation-play-state: paused;
+      }
+
+      .box2 {
+        background-color: crimson;
+        animation-timing-function: cubic-bezier(0, 0.99, 1, 1.59);
+      }
+
+      .box3 {
+        background-color: aliceblue;
+        animation-timing-function: ease-out;
+      }
+
+      .box4 {
+        background-color: blueviolet;
+        animation-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">
+      <h1>Box 1</h1>
+    </div>
+    <div class="box box2">
+      <h1>Box 2</h1>
+    </div>
+    <div class="box box3">
+      <h1>Box 3</h1>
+    </div>
+    <div class="box box4">
+      <h1>Box 4</h1>
+    </div>
+  </body>
+</html>

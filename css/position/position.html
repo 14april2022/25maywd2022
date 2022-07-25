@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+        There are 5 type of position
+        1 -> static default
+        2 -> absolute browser
+        3 -> relative
+        4 -> sticky
+        5 -> fixed
+     -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        position: absolute;
+        top: -100px;
+        right: 40px;
+        transition-duration: 0.6s;
+      }
+
+      .box1:hover {
+        top: 0;
+      }
+
+      /* 1 -> layer 
+        2 -> it remove there spacing also
+
+        top , right , left , bottom
+      */
+
+      .parent-box {
+        width: 300px;
+        padding: 20px;
+        height: 400px;
+        background-color: indianred;
+        margin: 200px auto;
+        position: relative;
+      }
+
+      .parent-box button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 1s;
+      }
+
+      .parent-box:hover button {
+        top: 100px;
+      }
+
+      .btn {
+        padding: 16px 20px;
+        font-size: 18px;
+        background-color: #ececec;
+        border: none;
+        margin: 100px;
+        position: relative;
+      }
+
+      .btn:hover ul {
+        display: block;
+      }
+
+      ul {
+        background-color: aliceblue;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        width: 100%;
+        padding: 10px 0;
+        display: none;
+      }
+      li {
+        padding: 10px 0;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">
+      Products
+      <ul>
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+        <li>Product 4</li>
+      </ul>
+    </button>
+
+    <div class="box1">
+      <h1>absolute</h1>
+    </div>
+
+    <div class="parent-box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        dolore beatae eaque ut quasi illo quae cupiditate tenetur laudantium
+        labore debitis assumenda accusamus, error et, odit aliquam provident ea
+        nisi!
+      </p>
+      <button>Click Me</button>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit
+      incidunt consequuntur? Numquam ut harum illum, unde rerum odio architecto
+      excepturi saepe quisquam deserunt corrupti voluptas inventore corporis
+      voluptate ea! Aspernatur nulla quia labore adipisci autem ipsa rerum qui
+      beatae officiis, eveniet at nihil maiores sapiente harum ut inventore
+      sequi? Nostrum aperiam voluptates ducimus, odio deleniti similique
+      obcaecati animi vel! Corporis qui itaque quam, alias culpa voluptatibus
+      harum magni, tenetur beatae reiciendis nesciunt? Ut nesciunt et asperiores
+      itaque officiis incidunt illo ab reprehenderit porro rerum, error
+      distinctio culpa ducimus fuga? Inventore esse tenetur amet vel deleniti
+      fugit repudiandae similique vero? Vero voluptatum tempora veniam ab,
+      nostrum corrupti voluptate sunt obcaecati mollitia ipsam molestiae, sit
+      sapiente, doloribus nemo! Culpa, ea earum!
+    </p>
+  </body>
+</html>
