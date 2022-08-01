@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .headingStyle {
+        color: red;
+        background-color: black;
+        font-size: 45px;
+        font-family: arial;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="addSomeCSS()">Add Some Styling</button>
+    <button onclick="removeCSS()">Remove Styling</button>
+    <button onclick="addRemoveCSS()">Add / Remove Styling</button>
+    <h1 id="heading">I am just a Tag</h1>
+    <script>
+      let heading = document.getElementById("heading");
+
+      function addSomeCSS() {
+        heading.classList.add("headingStyle");
+      }
+
+      function removeCSS() {
+        heading.classList.remove("headingStyle");
+      }
+
+      function addRemoveCSS() {
+        heading.classList.toggle("headingStyle");
+      }
+    </script>
+  </body>
+</html>

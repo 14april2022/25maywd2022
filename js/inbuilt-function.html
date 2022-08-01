@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="bodyTag">
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showConfirm()">Submit</button>
+    <h2 id="heading2"></h2>
+    <script>
+      // popup message box
+      //   1 -> alert
+      //   2 -> confirm
+      //   3 -> prompt
+      function showAlert() {
+        alert("I am just a alert");
+      }
+
+      let bodyTag = document.getElementById("bodyTag");
+      let heading2 = document.getElementById("heading2");
+
+      function showConfirm() {
+        let yourAnswer = confirm("Are you Sure You want to Submit");
+        if (yourAnswer) {
+          bodyTag.style.backgroundColor = "green";
+          heading2.textContent = "Submitted";
+        } else {
+          bodyTag.style.backgroundColor = "red";
+          heading2.textContent = "Not Submitted";
+        }
+      }
+    </script>
+  </body>
+</html>
