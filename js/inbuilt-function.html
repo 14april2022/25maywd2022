@@ -9,6 +9,7 @@
   <body id="bodyTag">
     <button onclick="showAlert()">Show Alert</button>
     <button onclick="showConfirm()">Submit</button>
+    <button onclick="showPrompt()">Enter your name</button>
     <h2 id="heading2"></h2>
     <script>
       // popup message box
@@ -31,6 +32,11 @@
           bodyTag.style.backgroundColor = "red";
           heading2.textContent = "Not Submitted";
         }
+      }
+
+      function showPrompt() {
+        let username = prompt("Enter Your Name");
+        heading2.textContent = username;
       }
     </script>
   </body>
